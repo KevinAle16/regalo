@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños ❤️</title>
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcccb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .heart {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: latido 1s infinite;
+            margin: auto;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -75px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 75px;
+            top: 0;
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1) rotate(-45deg); }
+            50% { transform: scale(1.2) rotate(-45deg); }
+            100% { transform: scale(1) rotate(-45deg); }
+        }
+
+        .text {
+    margin-top: 40px; /* Separa el texto del corazón */
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background-color: red;
+    border-radius: 10px;
+    display: inline-block; /* Ajusta el tamaño del fondo al contenido */
+    padding: 5px 10px; /* Pequeño margen interno para mejorar apariencia */
+    text-align: center;
+}
+
+        .text2 {
+            margin-top: 40px; /* Separa el texto del corazón */
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background-color: rgb(255, 0, 72);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .button-container {
+            margin-top: 30px; /* Espacio entre el texto y el botón */
+        }
+
+        .button {
+            background-color: white;
+            color: red;
+            border: 2px solid red;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"></div>
+        <div class="text">¡Feliz Cumpleaños!</div>
+        <div class="text2">Felis Cumpleaños a la mejor mama de muldo que nunca se rindio y aoesar de todas las piedras en el camino 
+            nunca se dio para abajo y sabe que estare para usted y luchare para seguir adelante y vea que sus esfuerzos no fueron para nada
+            ya sabe que no soy bueno para expresar mis emociones pero pues asi soy esta es mi forma de agradecerle y mostrarle un poco de lo que hago.
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="irlPagina()">Las mañanitas</button>
+
+        </div>
+    </div>
+    <script>
+        function irlPagina() {
+            window.location.href = "https://www.youtube.com/watch?v=fnokRScKgU0"; // Cambia esto por la URL deseada
+        }
+    </script>
+</body>
+</html>
